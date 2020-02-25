@@ -7,9 +7,8 @@
 		private final int empRatePerHour;
 		private final int numOfWorkingDays;
 		private final int maxHoursPerMonth;
-	//	public ArrayforEmpWageBuilderObject[] emparray;
- 
-		
+
+
 
 		public ArrayforEmpWageBuilderObject(String Company,int empRatePerHour,int numOfWorkingDays,int maxHoursPerMonth){
 			this.Company = Company;
@@ -53,17 +52,18 @@
                   case PART_TIME:
                      empHrs=4;
                      break;
-                  default: 
+                  default:
                      empHrs=0;
          }
+
         	 	totalEmpHrs += empHrs;
          	dailyWage=(empHrs*empRatePerHour);
          	totalEmpWage += dailyWage;
          	System.out.println("Daily Wage="+dailyWage);
-      }		
-				
+      }
+
          	System.out.println("Total Wages="+totalEmpWage);
-				
+
 		}
 
 		public static void main(String args[]){
@@ -77,6 +77,6 @@
 				emparray[i].EmpWageBuilder();
 			 	System.out.println(" ");
 			}
-				//obj.EmpWageBuilder();
+				
 	}
 }

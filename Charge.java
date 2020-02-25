@@ -10,9 +10,9 @@ public class Charge{
 	}
 	
 	private double potentialAt(double x,double y){
-		double k= 8.99e09;
-		double dx=x-rx;
-		double dy=y-dy;
+		double k = 8.99e09;
+		double dx = x-rx;
+		double dy = y-dy;
 		return k * q / Math.sqrt(dx*dx + dy*dy);
 	}
 
